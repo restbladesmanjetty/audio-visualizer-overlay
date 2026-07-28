@@ -1,0 +1,99 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="55%" stop-color="#0f1524"/>
+      <stop offset="100%" stop-color="#150c22"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="55%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#a5f3fc"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7e22ce"/>
+      <stop offset="55%" stop-color="#c026d3"/>
+      <stop offset="100%" stop-color="#f0abfc"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#e879f9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#e879f9" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c026d3" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c026d3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="txtGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+  <ellipse cx="880" cy="90" rx="360" ry="200" fill="url(#glow1)"/>
+  <ellipse cx="980" cy="260" rx="320" ry="180" fill="url(#glow2)"/>
+
+  <!-- faint grid -->
+  <g stroke="#233047" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- right side spectrum bars -->
+  <g>
+    <rect x="700" y="250" width="16" height="60" fill="url(#bar1)" opacity="0.55"/>
+    <rect x="724" y="210" width="16" height="100" fill="url(#bar2)" opacity="0.6"/>
+    <rect x="748" y="180" width="16" height="130" fill="url(#bar1)" opacity="0.65"/>
+    <rect x="772" y="140" width="16" height="170" fill="url(#bar2)" opacity="0.7"/>
+    <rect x="796" y="100" width="16" height="210" fill="url(#bar1)" opacity="0.78"/>
+    <rect x="820" y="70"  width="16" height="240" fill="url(#bar2)" opacity="0.85"/>
+    <rect x="844" y="130" width="16" height="180" fill="url(#bar1)" opacity="0.78"/>
+    <rect x="868" y="90"  width="16" height="220" fill="url(#bar2)" opacity="0.85"/>
+    <rect x="892" y="150" width="16" height="160" fill="url(#bar1)" opacity="0.72"/>
+    <rect x="916" y="60"  width="16" height="250" fill="url(#bar2)" opacity="0.9"/>
+    <rect x="940" y="110" width="16" height="200" fill="url(#bar1)" opacity="0.8"/>
+    <rect x="964" y="170" width="16" height="140" fill="url(#bar2)" opacity="0.7"/>
+    <rect x="988" y="200" width="16" height="110" fill="url(#bar1)" opacity="0.62"/>
+    <rect x="1012" y="230" width="16" height="80" fill="url(#bar2)" opacity="0.55"/>
+    <rect x="1036" y="260" width="16" height="50" fill="url(#bar1)" opacity="0.5"/>
+    <rect x="1060" y="245" width="16" height="65" fill="url(#bar2)" opacity="0.5"/>
+    <rect x="1084" y="215" width="16" height="95" fill="url(#bar1)" opacity="0.55"/>
+    <rect x="1108" y="235" width="16" height="75" fill="url(#bar2)" opacity="0.5"/>
+  </g>
+
+  <!-- baseline -->
+  <line x1="680" y1="311" x2="1140" y2="311" stroke="#38516f" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- waveform ribbon across bottom -->
+  <path d="M60 330 C 130 320, 170 300, 220 315 C 270 330, 310 290, 360 305 C 410 320, 450 280, 500 300 C 550 320, 600 295, 650 310 C 700 325, 740 285, 790 300" 
+        fill="none" stroke="url(#wave)" stroke-width="3" opacity="0.8"/>
+
+  <!-- decorative circular pulse near headline -->
+  <circle cx="105" cy="95" r="34" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.5"/>
+  <circle cx="105" cy="95" r="22" fill="none" stroke="#c026d3" stroke-width="2" opacity="0.55"/>
+  <circle cx="105" cy="95" r="6" fill="#a5f3fc" opacity="0.9"/>
+
+  <!-- headline -->
+  <text x="60" y="175" font-family="'Segoe UI', Arial, sans-serif" font-size="80" font-weight="700" fill="url(#txtGrad)" textLength="620" lengthAdjust="spacingAndGlyphs">Audio Visualizer</text>
+
+  <!-- tagline -->
+  <text x="62" y="222" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#93c5fd" opacity="0.9" textLength="640" lengthAdjust="spacingAndGlyphs">Render FFT, waveform, spectrum — single .exe</text>
+
+  <!-- small accent tick marks under tagline -->
+  <g stroke="#22d3ee" stroke-width="2" opacity="0.5">
+    <line x1="62" y1="245" x2="62" y2="255"/>
+    <line x1="82" y1="245" x2="82" y2="258"/>
+    <line x1="102" y1="245" x2="102" y2="253"/>
+    <line x1="122" y1="245" x2="122" y2="260"/>
+    <line x1="142" y1="245" x2="142" y2="250"/>
+  </g>
+</svg>
